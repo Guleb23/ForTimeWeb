@@ -36,8 +36,7 @@ namespace EmelyanovDiplom
             //app.UseHttpsRedirection();
 
             app.UseAuthorization();
-            app.Urls.Add("http://109.68.212.238");
-
+            app.Urls.Add("guleb23-fortimeweb-2882.twc1.net");
 
             app.MapControllers();
 
