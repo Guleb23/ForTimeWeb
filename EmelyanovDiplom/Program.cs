@@ -36,7 +36,7 @@ namespace EmelyanovDiplom
             //app.UseHttpsRedirection();
 
             app.UseAuthorization();
-            app.Urls.Add("http://localhost:4000");
+            app.Urls.Add("http://109.68.212.238");
 
 
             app.MapControllers();
