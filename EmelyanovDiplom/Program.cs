@@ -22,7 +22,7 @@ namespace EmelyanovDiplom
             //var connectionstring = $"Server={dbHost};Initial Catalog={dbName};User ID=sa;Password={dbPassword};Trusted_Connection=True;";
             builder.Services.AddDbContext<ApplicationDBContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DevConnection"));
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DevConnection"));
             });
             var app = builder.Build();
             
@@ -36,7 +36,6 @@ namespace EmelyanovDiplom
             //app.UseHttpsRedirection();
 
             app.UseAuthorization();
-            app.Urls.Add("guleb23-fortimeweb-2882.twc1.net");
 
             app.MapControllers();
 
